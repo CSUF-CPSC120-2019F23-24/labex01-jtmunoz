@@ -4,21 +4,25 @@
 
 int main()
 {
-  double hours, rate, pay;
+  double candybars, rate, pay;
+
+  std::cout << "Welcome to Jordan's Earning Calculator ";
 
   // Get the number of hours worked.
-  std::cout << "How many hours did you work? ";
-  std::cin >> hours;
+  std::cout << "How many candy bars did you sell? ";
+  std::cin >> candybars;
+  std::cout << "How many hours did you work? " << candybars << std::endl;
 
   // Get the hourly pay rate.
-  std::cout << "How much do you get paid per hour? ";
+  std::cout << "How much does the organization earn for each bar sold? ";
   std::cin >> rate;
+  std::cout << "How much does the organization earn for each bar sold? " << rate << std::endl;
 
   // Calculate the pay.
-  pay = hours * rate;
+  pay = candybars * rate;
 
   // Display the pay.
-  std::cout << "You have earned $" << pay << std::endl;
+  std::cout << "Congratulations! You have earned $" << pay << " for the organization!" << std::endl;
 
   return 0;
 }
